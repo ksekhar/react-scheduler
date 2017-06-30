@@ -1,5 +1,5 @@
 var React = require('react');
-var api = require('../utils/api');
+var api = require('../../utils/api');
 
 class List extends React.Component {
   constructor (props) {

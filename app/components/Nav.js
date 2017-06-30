@@ -6,14 +6,45 @@ class Nav extends React.Component {
     return (
       <ul className='nav'>
         <li>
-          <NavLink activeClassName='active' to='/new'>
-            New
-          </NavLink>
-        </li>
-        <li>
-          <NavLink activeClassName='active' to='/list'>
-            List
-          </NavLink>
+          <ul className='nav'>
+            Users
+            <li>
+              <NavLink activeClassName='active' to='/users/new'>
+                New
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName='active' to='/users/list'>
+                List
+              </NavLink>
+            </li>
+          </ul>
+          <ul className='nav'>
+            Employees
+            <li>
+              <NavLink activeClassName='active' to='/employees/new'>
+                New
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName='active' to='/employees/list'>
+                List
+              </NavLink>
+            </li>
+          </ul>
+          <ul className='nav'>
+            Customers
+            <li>
+              <NavLink activeClassName='active' to='/employees/new'>
+                New
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName='active' to='/employees/list'>
+                List
+              </NavLink>
+            </li>
+          </ul>
         </li>
       </ul>
     )

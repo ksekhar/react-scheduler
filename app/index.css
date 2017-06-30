@@ -89,3 +89,7 @@ li {
   font-weight: bold;
   cursor: pointer;
 }
+
+.employee {
+  padding: 5px;
+}

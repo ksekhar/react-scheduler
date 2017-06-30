@@ -5,8 +5,10 @@ var Route = ReactRouter.Route;
 var Switch = ReactRouter.Switch;
 
 var Nav = require('./Nav');
-var List = require('./List');
-var New = require('./New');
+var ListUser = require('./users/List');
+var NewUser = require('./users/New');
+var ListEmployee = require('./employees/List');
+var NewEmployee = require('./employees/New');
 class App extends React.Component {
   render() {
     return (
@@ -14,8 +16,10 @@ class App extends React.Component {
         <div className='container'>
           <Nav />
           <Switch>
-            <Route exact path='/new' component={New} />
-            <Route exact path='/list' component={List} />
+            <Route exact path='/users/new' component={NewUser} />
+            <Route exact path='/users/list' component={ListUser} />
+            <Route exact path='/employees/new' component={NewEmployee} />
+            <Route exact path='/employees/list' component={ListEmployee} />
             <Route render={function () {
               return <p> Not Found </p>
             }} />
